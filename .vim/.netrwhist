@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/media/hdb/team/androidN/packages/apps/Nfc/nxp/src'
+let g:netrw_dirhist_2='/media/hdb/team/androidN/packages/apps/Nfc/nxp/src/com'
+let g:netrw_dirhist_3='/media/hdb/team/androidN/packages/apps/Nfc/nxp/src/com/android'
+let g:netrw_dirhist_4='/media/hdb/team/androidN/packages/apps/Nfc/nxp/src/com/android/nfc'
+let g:netrw_dirhist_5='/media/hdb/team/androidN/packages/apps/Nfc/nxp/src/com/android/nfc/dhimpl'
+let g:netrw_dirhist_6='/media/hdb/team/androidN/packages/apps/Nfc'
+let g:netrw_dirhist_7='/media/hdb/team/androidN/packages/apps/Nfc/assets'
+let g:netrw_dirhist_8='/media/hdb/team/androidN/packages/apps/Nfc'
