@@ -88,8 +88,13 @@ if has("cscope")
     " go back to where you were before the search.  
     "
 
-    nmap <C-\>s :cs find s <C-R>=expand("<cword>")<CR><CR>	
-    nmap <C-\>g :cs find g <C-R>=expand("<cword>")<CR><CR>	
+    nmap <C-[> :cs find s <C-R>=expand("<cword>")<CR><CR>
+    nmap <F10> :cs find c <C-R>=expand("<cword>")<CR><CR>:cwindow<CR>
+    nnoremap <F11> :cn<CR>
+    nnoremap <F12> :cp<CR>
+    nmap <C-M> :cnf<CR><CR>
+    nmap <C-N> :cpf<CR><CR>
+    nmap <C-[>g :cs find g <C-R>=expand("<cword>")<CR><CR>	
     nmap <C-\>c :cs find c <C-R>=expand("<cword>")<CR><CR>	
     nmap <C-\>t :cs find t <C-R>=expand("<cword>")<CR><CR>	
     nmap <C-\>e :cs find e <C-R>=expand("<cword>")<CR><CR>	
@@ -161,5 +166,3 @@ if has("cscope")
     "set ttimeoutlen=100
 
 endif
-
-
