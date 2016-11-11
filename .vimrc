@@ -28,7 +28,7 @@ if has('cscope')
   cnoreabbrev css cs show
   cnoreabbrev csh cs help
 
-  command -nargs=0 Cscope cs add $VIMSRC/src/cscope.out $VIMSRC/src
+  command! -nargs=0 Cscope cs add $VIMSRC/src/cscope.out $VIMSRC/src
 endif
 
 autocmd StdinReadPre * let s:std_in=1
@@ -45,6 +45,8 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
+nnoremap <F4> <C-w>l
+nnoremap <F3> <C-w>h
 
 " Find file in current directory and edit it.
 function! Find(name)
@@ -79,6 +81,15 @@ function! Find(name)
 endfunction
 command! -nargs=1 Find :call Find("<args>")
 
+" ConqueGdb l 
+let g:ConqueTerm_Color = 2         " 1: strip color after 200 lines, 2: always with color
+let g:ConqueTerm_CloseOnEnd = 1    " close conque when program ends running
+let g:ConqueTerm_StartMessages = 0 " display warning messages if conqueTerm is configured incorrectly
 
+" show line number by default
+set number
 
+" move to the middle window after vim startup
+autocmd VimEnter * wincmd j
+autocmd VimEnter * exe 2 . "wincmd w"
 
